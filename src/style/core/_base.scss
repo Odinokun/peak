@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $inter;
+  font-size: 16px;
+  line-height: 1.35;
+  color: $grey;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+ol,
+ul {
+  li {
+    padding: 0;
+  }
+}
+
+input,
+textarea,
+select,
+button {
+  border-radius: 0 !important;
+  outline: none;
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+//изменяем цвет выделения текста мышью
+::selection {
+  color: $grey;
+  background-color: $yellow;
+  text-shadow: none;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+
+  @include min(680) {
+    padding: 0 25px;
+  }
+  @include min(1024) {
+    padding: 0 40px;
+  }
+}
