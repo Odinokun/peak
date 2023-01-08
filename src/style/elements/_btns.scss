@@ -1,0 +1,40 @@
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+
+  &:hover {
+    span {
+      color: $yellow;
+    }
+
+    svg {
+      fill: $yellow;
+      transform: translate(3px, 3px);
+    }
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    display: block;
+    padding: 15px 24px;
+    transition: .5s;
+    color: #fff;
+    border-right: 2px solid #fff;
+  }
+
+  svg {
+    flex: none;
+    fill: #fff;
+    width: 13px;
+    height: 13px;
+    margin-right: 22px;
+    margin-left: 22px;
+    transition: .5s;
+  }
+}

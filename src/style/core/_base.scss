@@ -79,7 +79,7 @@ svg {
   width: 100%;
   padding: 0 10px;
 
-  @include min(680) {
+  @include min(768) {
     padding: 0 25px;
   }
   @include min(1024) {
