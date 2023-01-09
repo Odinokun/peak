@@ -1,0 +1,174 @@
+/* begin HEADER */
+.services__header {
+  position: sticky;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @include min(1024) {
+    flex-direction: row;
+  }
+}
+
+.services__header-left {
+  @include min(1024) {
+    width: 50%;
+  }
+}
+
+.services__header-right {
+  @include min(1024) {
+    width: 50%;
+  }
+
+  .title {
+    margin-bottom: 60px;
+
+    @include min(1024) {
+      max-width: 625px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+/* end   HEADER */
+
+/* begin CARDS */
+.services__cards {
+  width: 100%;
+  background-color: #fff;
+}
+
+.services__card {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  background-color: #fff;
+
+  @include min(768) {
+    min-height: 250px;
+  }
+  @include min(1024) {
+    min-height: 300px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    content: '';
+    pointer-events: none;
+    border-top: 2px solid #070707;
+    border-right: 2px solid #070707;
+    border-left: 2px solid #070707;
+    border-radius: 16px 16px 0 0;
+  }
+
+  &:nth-child(1) {
+      top: 250px;
+    @include min(576) {
+      top: 200px;
+    }
+    @include min(768) {
+      top: 230px;
+    }
+    @include min(1024) {
+      top: 300px;
+    }
+  }
+
+  &:nth-child(2) {
+    top: 290px;
+    @include min(576) {
+    top: 245px;
+    }
+    @include min(768) {
+      top: 275px;
+    }
+    @include min(1024) {
+      top: 355px;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 330px;
+    @include min(576) {
+    top: 290px;
+
+    }
+
+    @include min(768) {
+      top: 320px;
+    }
+    @include min(1024) {
+      top: 410px;
+    }
+  }
+
+  &:nth-child(4) {
+    top: 370px;
+    @include min(576) {
+    top: 335px;
+    }
+    @include min(768) {
+      top: 365px;
+    }
+    @include min(1024) {
+      top: 465px;
+    }
+  }
+
+  &:nth-child(5) {
+    top: 410px;
+    @include min(576) {
+    top: 380px;
+
+    }
+
+    @include min(768) {
+      top: 410px;
+    }
+    @include min(1024) {
+      top: 520px;
+    }
+  }
+}
+
+.services__card-item {
+  padding: 25px 10px 25px 15px;
+  user-select: none;
+
+  @include min(768) {
+    padding: 25px 30px 35px 30px;
+  }
+  @include min(1024) {
+    padding: 35px 30px 35px 30px;
+  }
+
+  &:first-child {
+    flex: none;
+    width: auto;
+
+    @include min(768) {
+      width: 50px;
+    }
+    @include min(1024) {
+      width: 50%;
+    }
+  }
+
+  &:last-child {
+    width: 100%;
+
+    @include min(768) {
+    }
+    @include min(1024) {
+      width: 50%;
+    }
+  }
+}
+
+/* end   CARDS */

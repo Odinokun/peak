@@ -1,0 +1,18 @@
+mixin servicesSlide(img, title)
+  .services-slider__item.swiper-slide
+    a(href="assets/img/services-slider/" + img + ".jpg" data-fancybox="gallery").services-slider__img
+      img(src="assets/img/services-slider/" + img + ".jpg" alt="image")
+      .services-slider__title.body-s #{title}
+
+.services-slider-wrap
+  .container
+    //BEGIN services-slider
+    #services-slider.services-slider
+      .swiper-wrapper
+        +servicesSlide('01', 'House Renovation')
+        +servicesSlide('02', 'Bathroom Remodeling')
+        +servicesSlide('03', 'Living Room Renovation')
+        +servicesSlide('04', 'Backyard Renovation')
+        +servicesSlide('05', 'Siding')
+        +servicesSlide('06', 'Kitchen Renovation')
+    //END   services-slider
