@@ -1,4 +1,12 @@
-///* begin HEADER */
+.about {
+  padding-bottom: 0;
+
+  @include min(1024) {
+    padding-bottom: 20px;
+  }
+}
+
+/* begin HEADER */
 .about__header {
   .section-title {
     @include min(768) {
@@ -20,9 +28,8 @@
     }
   }
 }
-
-
 /* end   HEADER */
+
 .about__body {
   display: flex;
   flex-direction: column;
