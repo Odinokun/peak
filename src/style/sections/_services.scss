@@ -68,7 +68,8 @@
   }
 
   &:nth-child(1) {
-      top: 250px;
+    top: 250px;
+
     @include min(576) {
       top: 200px;
     }
@@ -82,8 +83,9 @@
 
   &:nth-child(2) {
     top: 290px;
+
     @include min(576) {
-    top: 245px;
+      top: 245px;
     }
     @include min(768) {
       top: 275px;
@@ -95,11 +97,10 @@
 
   &:nth-child(3) {
     top: 330px;
+
     @include min(576) {
-    top: 290px;
-
+      top: 290px;
     }
-
     @include min(768) {
       top: 320px;
     }
@@ -110,8 +111,9 @@
 
   &:nth-child(4) {
     top: 370px;
+
     @include min(576) {
-    top: 335px;
+      top: 335px;
     }
     @include min(768) {
       top: 365px;
@@ -123,11 +125,10 @@
 
   &:nth-child(5) {
     top: 410px;
+
     @include min(576) {
-    top: 380px;
-
+      top: 380px;
     }
-
     @include min(768) {
       top: 410px;
     }
@@ -138,35 +139,33 @@
 }
 
 .services__card-item {
-  padding: 25px 10px 25px 15px;
   user-select: none;
 
-  @include min(768) {
-    padding: 25px 30px 35px 30px;
-  }
-  @include min(1024) {
-    padding: 35px 30px 35px 30px;
-  }
 
   &:first-child {
     flex: none;
     width: auto;
+    padding: 25px 15px 0 15px;
 
     @include min(768) {
-      width: 50px;
+      padding: 25px 30px 0 25px;
     }
     @include min(1024) {
       width: 50%;
+      padding: 35px 30px;
     }
   }
 
   &:last-child {
     width: 100%;
+    padding: 25px 15px 0 0;
 
     @include min(768) {
+      padding: 25px 25px 0 0;
     }
     @include min(1024) {
       width: 50%;
+      padding: 35px 30px 0 0;
     }
   }
 }

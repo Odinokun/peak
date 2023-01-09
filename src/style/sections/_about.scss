@@ -1,0 +1,129 @@
+///* begin HEADER */
+.about__header {
+  .section-title {
+    @include min(768) {
+      margin-bottom: -20px;
+    }
+    @include min(1024) {
+      margin-bottom: -30px;
+    }
+  }
+
+  .title {
+    margin-bottom: 25px;
+
+    @include min(768) {
+      text-indent: 50%;
+    }
+    @include min(1024) {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+
+/* end   HEADER */
+.about__body {
+  display: flex;
+  flex-direction: column;
+
+  @include min(1024) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* begin LEFT */
+.about__body-left {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  @include min(1024) {
+    width: calc(50% - 40px);
+    margin-bottom: 0;
+  }
+}
+
+.about__body-img {
+  width: calc(50% - 8px);
+
+  @include min(768) {
+    width: calc(50% - 20px);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* end   LEFT */
+
+/* begin RIGHT */
+.about__body-right {
+  display: flex;
+  flex-direction: column;
+
+  @include min(1024) {
+    width: 50%;
+  }
+}
+
+.about__body-text {
+  margin-bottom: 60px;
+
+  @include min(1024) {
+    width: 50%;
+    max-width: 370px;
+  }
+}
+
+.about__down {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.about__down-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  transition: .5s;
+  border: 2px solid $black;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $yellow;
+
+    svg {
+      fill: $yellow;
+    }
+  }
+
+  svg {
+    position: relative;
+    fill: $black;
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+    animation-name: arrAnim;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.about__down-text {
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+/* end   RIGHT */
