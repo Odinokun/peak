@@ -1,0 +1,132 @@
+.start {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: $black;
+
+  .container {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 500px;
+
+    @include min(768) {
+      min-height: 100vh;
+    }
+  }
+}
+
+/* begin VIDEO */
+.start__video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(15, 15, 15, .5);
+  }
+
+  iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border: none;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .start iframe {
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .start iframe {
+    width: 177.78vh;
+  }
+}
+
+/* end   VIDEO */
+
+.start__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include min(768) {
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+
+.start__subtitle {
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.start__title {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.start__down {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.start__down-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  transition: .5s;
+  border: 2px solid $yellow;
+  border-radius: 50%;
+
+  svg {
+    position: relative;
+    fill: $yellow;
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+    animation-name: arrAnim;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.start__down-text {
+  margin-bottom: 0;
+  padding-top: 5px;
+  color: $yellow;
+}
