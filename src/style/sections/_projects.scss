@@ -1,0 +1,32 @@
+/* begin HEADER */
+.projects__header {
+  display: flex;
+  flex-direction: column;
+
+  @include min(1024) {
+    flex-direction: row;
+  }
+}
+
+.projects__header-left {
+  @include min(1024) {
+    width: 50%;
+  }
+}
+
+.projects__header-right {
+  @include min(1024) {
+    width: 50%;
+  }
+
+  .title {
+    margin-bottom: 40px;
+
+    @include min(1024) {
+      max-width: 625px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+/* end   HEADER */

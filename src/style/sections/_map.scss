@@ -1,0 +1,54 @@
+.map {
+  padding-bottom: 0;
+}
+
+/* begin HEADER */
+.map__header {
+  .section-title {
+    @include min(768) {
+      margin-bottom: -20px;
+    }
+    @include min(1024) {
+      margin-bottom: -30px;
+    }
+  }
+
+  .title {
+    margin-bottom: 40px;
+
+    @include min(768) {
+      text-indent: 50%;
+    }
+  }
+}
+
+/* end   HEADER */
+
+.map__body {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 355px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.map__title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  @include min(1024) {
+    top: 40px;
+    left: 40px;
+  }
+  @include min(1350) {
+    top: 80px;
+    left: 80px;
+  }
+}

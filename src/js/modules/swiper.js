@@ -36,4 +36,39 @@ module.exports = function () {
     },
   });
 
+  const projectsSlider = new Swiper("#projects-slider", {
+    navigation: {
+      nextEl: ".projects-slider__btn--next",
+      prevEl: ".projects-slider__btn--prev",
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    autoplay: {
+      delay: 4000000,
+      disableOnInteraction: true,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      1024: {
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      },
+    },
+  });
+
+  const projectsSmSlider = new Swiper(".projects-sm-slider", {
+    navigation: {
+      nextEl: ".projects-sm-slider__btn--next",
+      prevEl: ".projects-sm-slider__btn--prev",
+    },
+    effect: "fade",
+    loop: true,
+  });
+
 };

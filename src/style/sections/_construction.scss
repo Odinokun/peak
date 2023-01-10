@@ -8,6 +8,9 @@
     @include min(768) {
       margin-bottom: -20px;
     }
+    @include min(1024) {
+      margin-bottom: -30px;
+    }
   }
 
   .title {
