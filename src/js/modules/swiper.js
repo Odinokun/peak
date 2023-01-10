@@ -12,16 +12,18 @@ module.exports = function () {
   });
 
   const servicesSlider = new Swiper("#services-slider", {
-    slidesPerView: 1.5,
     spaceBetween: 10,
-    grabCursor: true,
-    // mousewheel: {
-    //   releaseOnEdges: true,
-    // },
+    grabCursor: false,
+    slidesPerView: 1.5,
+    freeMode: true,
+    freeModeMomentum: false,
     loop: true,
+    speed: 8000,
+    mousewheelControl: false,
+    keyboardControl: false,
     autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
+      delay: 1,
+      disableOnInteraction: true
     },
     breakpoints: {
       576: {

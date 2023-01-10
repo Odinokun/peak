@@ -228,6 +228,12 @@
     transition: .5s;
     color: #070707;
 
+    &:hover {
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+
     &::before {
       position: absolute;
       top: 0;
@@ -238,13 +244,14 @@
       margin: auto;
       content: '';
       transition: .5s;
-      transform: translateY(-1px);
       border-radius: 50%;
       background-color: $yellow;
       background-image: url('../img/btn-arrow.svg');
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-size: 9px 9px;
+
+      will-change: transform;
     }
   }
 }

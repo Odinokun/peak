@@ -51,6 +51,7 @@
     color: $yellow;
 
     &::before {
+      transform: rotate(-45deg);
       background-color: $yellow;
     }
   }
@@ -65,13 +66,14 @@
     margin: auto;
     content: '';
     transition: .5s;
-    transform: translateY(-1px);
     border-radius: 50%;
     background-color: #fff;
     background-image: url('../img/btn-arrow.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 9px 9px;
+
+    will-change: transform;
   }
 }
 

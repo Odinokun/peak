@@ -127,6 +127,7 @@
     animation-iteration-count: infinite;
   }
 }
+
 /* end   LEFT */
 
 /* begin RIGHT */
@@ -172,6 +173,14 @@
 
   @include min(1024) {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: $yellow;
+
+    span {
+      border-color: $yellow;
+    }
   }
 }
 
