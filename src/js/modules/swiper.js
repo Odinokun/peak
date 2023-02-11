@@ -44,12 +44,13 @@ module.exports = function () {
       prevEl: ".projects-slider__btn--prev",
     },
     loop: true,
+    simulateTouch: false,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
     },
     autoplay: {
-      delay: 4000000,
+      delay: 4000,
       disableOnInteraction: true,
       pauseOnMouseEnter: true,
     },

@@ -1,44 +1,12 @@
-mixin testItem
-  .swiper-slide.projects-slider__item
-    //BEGIN left
-    .projects-slider__item-left
-      include ./projects-sm-slider
-    //END   left
-    //BEGIN right
-    .projects-slider__item-right
-      .projects-slider__title.h3 Anna’s cozy kitchen
-      .projects-slider__subtitle.body-l Kitchen renovation including tile, cabinets, and flooring, and installation of new equipment.
-      //BEGIN info
-      .projects-slider__info
-        .projects-slider__info-item
-          span.caps Total budget:
-          span.h3 $12,856
-        .projects-slider__info-item
-          span.caps Terms:
-          span.h3 2 months
-      //END   info
-      .projects-slider__descr
-        .projects-slider__descr-title.h4 Key features:
-        .projects-slider__descr-title.body-m We completely updated the design of the kitchen, added important functional elements, and designed a lot of cabinets with drawers in which Anna can store everything she needs in the kitchen.
-      .projects-slider__footer
-        .projects-slider__footer-item Would you like to order a calculation for your project? <a href="#footer" class="scroll">Contact us</a>
-    //END   right
-
 //BEGIN projects-slider
 #projects-slider.projects-slider
   .swiper-wrapper
-    //BEGIN projects-slider__item
-    +testItem
-    //END   projects-slider__item
-    //BEGIN projects-slider__item
-    +testItem
-    //END   projects-slider__item
-    //BEGIN projects-slider__item
-    +testItem
-    //END   projects-slider__item
-    //BEGIN projects-slider__item
-    +testItem
-    //END   projects-slider__item
+    include ../sections/projects/project-01
+    include ../sections/projects/project-06
+    include ../sections/projects/project-03
+    include ../sections/projects/project-04
+    include ../sections/projects/project-05
+
   .swiper-pagination
   .projects-slider__btn.projects-slider__btn--prev
     +svg('arr-down')

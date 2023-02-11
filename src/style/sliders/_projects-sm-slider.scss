@@ -69,6 +69,10 @@
 }
 
 .projects-sm-slider__item {
+  user-select: none;
+  background-color: #ccc;
+
+  picture,
   img {
     display: block;
     width: 100%;

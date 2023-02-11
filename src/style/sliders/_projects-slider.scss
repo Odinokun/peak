@@ -104,6 +104,8 @@
 }
 
 .projects-slider__item-right {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 20px 10px;
   background-color: rgba(204, 204, 204, .2);
@@ -113,6 +115,7 @@
   }
   @include min(1024) {
     width: 50%;
+    min-height: 650px;
   }
 }
 
@@ -133,69 +136,70 @@
   }
 }
 
-.projects-slider__info {
-  display: flex;
-  margin-bottom: 30px;
-  border-top: 1px solid #cdcdcd;
-
-  @include min(768) {
-    margin-bottom: 70px;
-  }
-  @include min(1350) {
-    margin-bottom: 115px;
-  }
-}
-
-.projects-slider__info-item {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-top: 14px;
-
-  @include min(768) {
-    padding-bottom: 10px;
-  }
-  @include min(1350) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  &:first-child {
-    padding-right: 10px;
-    border-right: 1px solid #cdcdcd;
-
-    @include min(768) {
-      padding-right: 20px;
-    }
-  }
-
-  &:last-child {
-    padding-left: 10px;
-
-    @include min(768) {
-      padding-left: 20px;
-    }
-  }
-
-  span {
-    line-height: 1;
-    display: block;
-  }
-
-  .caps {
-    margin-bottom: 10px;
-    padding-top: 3px;
-
-    @include min(1350) {
-      margin-bottom: 0;
-    }
-  }
-}
+//.projects-slider__info {
+//  display: flex;
+//  margin-bottom: 30px;
+//  border-top: 1px solid #cdcdcd;
+//
+//  @include min(768) {
+//    margin-bottom: 70px;
+//  }
+//  @include min(1350) {
+//    margin-bottom: 115px;
+//  }
+//}
+//
+//.projects-slider__info-item {
+//  display: flex;
+//  flex-direction: column;
+//  width: 50%;
+//  padding-top: 14px;
+//
+//  @include min(768) {
+//    padding-bottom: 10px;
+//  }
+//  @include min(1350) {
+//    flex-direction: row;
+//    justify-content: space-between;
+//    align-items: flex-start;
+//  }
+//
+//  &:first-child {
+//    padding-right: 10px;
+//    border-right: 1px solid #cdcdcd;
+//
+//    @include min(768) {
+//      padding-right: 20px;
+//    }
+//  }
+//
+//  &:last-child {
+//    padding-left: 10px;
+//
+//    @include min(768) {
+//      padding-left: 20px;
+//    }
+//  }
+//
+//  span {
+//    line-height: 1;
+//    display: block;
+//  }
+//
+//  .caps {
+//    margin-bottom: 10px;
+//    padding-top: 3px;
+//
+//    @include min(1350) {
+//      margin-bottom: 0;
+//    }
+//  }
+//}
 
 .projects-slider__descr {
   @include min(768) {
     max-width: 800px;
+    margin-top: auto;
     margin-bottom: 38px;
     padding-bottom: 38px;
     border-bottom: 1px solid #cdcdcd;

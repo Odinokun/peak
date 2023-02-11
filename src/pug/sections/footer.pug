@@ -7,11 +7,12 @@ footer#footer.footer.p-100
       .footer__title.h2 Call us – <a href="tel:916 710 1007">916 710 1007</a>
       .footer__or.h4 or
       .footer__title.h2 Fill out the form
-      form.footer__form
-        input(placeholder="Your name").footer__input
-        input(placeholder="Phone number").footer__input
+      form.footer__form#footer__form
+        input(name="name" placeholder="Your name" required).footer__input
+        input(name="phone" placeholder="Phone number" required).footer__input
         .footer__form-bottom
           .footer__form-bottom-text.tech By clicking the send request button, you consent to the processing of personal data and agree to our privacy policy.
+          //input(type='submit')
           button.btn-arrow.footer__form-btn
             span Send Request
             +svg('btn-arr')
