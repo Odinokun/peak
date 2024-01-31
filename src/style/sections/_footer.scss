@@ -1,5 +1,5 @@
 .footer {
-  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $yellow;
 
   .container {
@@ -53,75 +53,75 @@
   padding-top: 15px;
 }
 
-.footer__input {
-  font-size: 18px;
-  line-height: 1.2;
-  display: block;
-  width: 100%;
-  margin-top: 15px;
-  padding: 15px 10px 10px 0;
-  letter-spacing: -.02em;
-  color: #070707;
-  border-top: none;
-  border-right: none;
-  border-bottom: 2px solid #070707;
-  border-left: none;
-  background-color: transparent;
+// .footer__input {
+//   font-size: 18px;
+//   line-height: 1.2;
+//   display: block;
+//   width: 100%;
+//   margin-top: 15px;
+//   padding: 15px 10px 10px 0;
+//   letter-spacing: -.02em;
+//   color: #070707;
+//   border-top: none;
+//   border-right: none;
+//   border-bottom: 2px solid #070707;
+//   border-left: none;
+//   background-color: transparent;
 
-  @include placeholder-color(#070707);
-  @include min(768) {
-    font-size: 20px;
-    padding: 25px 15px 20px 0;
-  }
-}
+//   @include placeholder-color(#070707);
+//   @include min(768) {
+//     font-size: 20px;
+//     padding: 25px 15px 20px 0;
+//   }
+// }
 
-.footer__form-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 20px;
+// .footer__form-bottom {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   margin-top: 20px;
 
-  @include min(576) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-  }
-}
+//   @include min(576) {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 50px;
+//   }
+// }
 
-.footer__form-bottom-text {
-  margin-bottom: 20px;
+// .footer__form-bottom-text {
+//   margin-bottom: 20px;
 
-  @include min(576) {
-    max-width: 390px;
-    margin-bottom: 0;
-    padding-right: 20px;
-  }
-}
+//   @include min(576) {
+//     max-width: 390px;
+//     margin-bottom: 0;
+//     padding-right: 20px;
+//   }
+// }
 
-.footer__form-btn {
-  flex: none;
-  padding: 0;
-  border-color: #070707;
-  background-color: transparent;
-  box-shadow: none;
+// .footer__form-btn {
+//   flex: none;
+//   padding: 0;
+//   border-color: #070707;
+//   background-color: transparent;
+//   box-shadow: none;
 
-  span {
-    color: #070707;
-    border-color: #070707;
-  }
+//   span {
+//     color: #070707;
+//     border-color: #070707;
+//   }
 
-  svg {
-    fill: #070707;
-  }
+//   svg {
+//     fill: #070707;
+//   }
 
-  &:hover {
-    span {
-      color: #070707;
-    }
+//   &:hover {
+//     span {
+//       color: #070707;
+//     }
 
-    svg {
-      fill: #070707;
-    }
-  }
-}
+//     svg {
+//       fill: #070707;
+//     }
+//   }
+// }
