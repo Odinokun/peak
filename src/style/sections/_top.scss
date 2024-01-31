@@ -146,13 +146,13 @@
 }
 
 .top__title {
-  letter-spacing: -0.03em;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
   font-family: $pp;
+  font-weight: 600;
   font-style: normal;
   line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+  color: #fff;
 
   @include responsive-font(58, 44);
   @include min(1024) {
@@ -194,9 +194,9 @@
   right: 0;
   bottom: -60px;
   transform: rotate(-180deg);
+  writing-mode: vertical-rl;
   color: #fff;
 
-  writing-mode: vertical-rl;
   @include min(1024) {
     bottom: 40px;
   }

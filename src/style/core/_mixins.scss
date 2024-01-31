@@ -41,11 +41,14 @@
 
 // ===== responsive font =====
 @mixin responsive-font($pcSize, $mobSize) {
+  font-size: $pcSize + px;
+
   $maxWidth: 1680;
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
-  font-size: $pcSize + px;
   @media (max-width: 1680px) {
-    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+    font-size: calc(
+      #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+    );
   }
 }

@@ -1,8 +1,7 @@
 .footer {
+  padding-top: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $yellow;
-
-  padding-top: 60px;
 
   @include min(1024) {
     padding-top: 100px;
@@ -47,8 +46,8 @@
 }
 
 .footer__or {
-  text-transform: uppercase;
   padding: 40px 0 35px 0;
+  text-transform: uppercase;
 
   @include min(1024) {
     padding: 65px 0;
