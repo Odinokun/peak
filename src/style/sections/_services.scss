@@ -1,4 +1,4 @@
-.services{
+.services {
   padding-bottom: 0;
 }
 /* begin HEADER */
@@ -48,10 +48,10 @@
   width: 100%;
   min-height: 250px;
   background-color: #fff;
-
   //@include min(768) {
   //  min-height: 250px;
   //}
+
   @include min(1024) {
     min-height: 300px;
   }
@@ -143,7 +143,6 @@
 
 .services__card-item {
   user-select: none;
-
 
   &:first-child {
     flex: none;

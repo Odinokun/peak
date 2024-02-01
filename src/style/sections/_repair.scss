@@ -38,6 +38,7 @@
 
 .repair__title {
   writing-mode: vertical-rl;
+
   @include min(1024) {
     writing-mode: initial;
   }
@@ -98,7 +99,7 @@
     position: relative;
     display: inline-block;
     padding-right: 25px;
-    transition: .5s;
+    transition: 0.5s;
     color: #070707;
 
     &:hover {
@@ -116,7 +117,7 @@
       height: 20px;
       margin: auto;
       content: '';
-      transition: .5s;
+      transition: 0.5s;
       border-radius: 50%;
       background-color: $yellow;
       background-image: url('../img/btn-arrow.svg');
