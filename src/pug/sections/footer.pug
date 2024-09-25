@@ -8,8 +8,16 @@ footer#footer.footer
       .footer__or.h4 or
       .footer__title.h2 Fill out the form
       form.footer__form#footer__form
-        input(name="name" placeholder="Your name" required).footer__input
-        input(name="phone" placeholder="Phone number" required).footer__input
+        .footer__form-row
+          input(name="name" placeholder="Full name *" required).footer__input
+          input(name="phone" placeholder="Mobile phone *" required).footer__input
+        .footer__form-row
+          input(name="email" placeholder="Email *" required).footer__input
+          input(name="zip" placeholder="ZIP *" required).footer__input
+        .footer__form-row
+          textarea(name="description" placeholder="Describe your task *").footer__textarea
+        //- input(name="name" placeholder="Your name" required).footer__input
+        //- input(name="phone" placeholder="Phone number" required).footer__input
         .footer__form-bottom
           .footer__form-bottom-text.tech By clicking the send request button, you consent to the processing of personal data and agree to our privacy policy.
           //input(type='submit')

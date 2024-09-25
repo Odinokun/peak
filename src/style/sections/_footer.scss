@@ -1,10 +1,12 @@
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, .15);
   background-color: $yellow;
 
   @include min(1024) {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .container {
@@ -50,12 +52,21 @@
   text-transform: uppercase;
 
   @include min(1024) {
-    padding: 65px 0;
+    padding: 32px 0;
   }
 }
 
 .footer__form {
   padding-top: 15px;
+}
+.footer__form-row {
+  display: flex;
+  flex-direction: column;
+
+  @include min(576) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__input {
@@ -74,9 +85,35 @@
   background-color: transparent;
 
   @include placeholder-color(#070707);
+  @include min(576) {
+    width: calc(50% - 20px);
+  }
   @include min(768) {
     font-size: 20px;
     padding: 25px 15px 20px 0;
+  }
+}
+
+.footer__textarea {
+  font-size: 18px;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 110px;
+  margin-top: 30px;
+  padding: 18px 24px;
+  resize: none;
+  letter-spacing: -.02em;
+  color: #070707;
+  border: 2px solid #070707;
+  background-color: transparent;
+
+  @include placeholder-color(#070707);
+  @include min(576) {
+    margin-top: 60px;
+  }
+  @include min(768) {
+    font-size: 20px;
   }
 }
 
