@@ -210,6 +210,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  pointer-events: none;
 
   @include min(1024) {
     right: 40px;
@@ -224,6 +225,7 @@
   padding: 16px;
   transition: opacity .5s;
   text-decoration: none;
+  pointer-events: auto;
   color: #101010;
   border-radius: 6px 6px 0 6px;
   background-color: #dcf8c8;
@@ -248,6 +250,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
+  pointer-events: auto;
   border-radius: 50%;
   background-color: #27d045;
 }
