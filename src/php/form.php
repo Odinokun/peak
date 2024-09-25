@@ -1,13 +1,18 @@
 <?php
 
-$email_to       = "Info@peakconstruction.us";
-$email_to_2     = "Info@peakconstruction.us";
+$email_to       = "odinokun@gmail.com";
+// $email_to       = "Info@peakconstruction.us";
+$email_to_2     = "odinokun@gmail.com";
+// $email_to_2     = "Info@peakconstruction.us";
 $email_from     = "peakconstruction.us";
 $email_subject  = "Email from peakconstruction.us";
 $date = new DateTime('now', new DateTimeZone('America/Los_Angeles') );
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$useremail = $_POST['useremail'];
+$zip = $_POST['zip'];
+$description = $_POST['description'];
 
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -25,6 +30,9 @@ function clean_string($string) {
 $email_message = "Email from peakconstruction.us:\n\n";
 $email_message .= "Name: ".clean_string($name)."\n";
 $email_message .= "Phone: ".clean_string($phone)."\n";
+$email_message .= "Email: ".clean_string($useremail)."\n";
+$email_message .= "Zip: ".clean_string($zip)."\n";
+$email_message .= "Description: ".clean_string($description)."\n";
 
 $headers = 'From: '.$email_from."\r\n";
 $headers .= 'Reply-To: '.$email."\r\n";
