@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     content: '';
-    background-color: rgba(15, 15, 15, 0.75);
+    background-color: rgba(15, 15, 15, .75);
   }
 
   iframe {
@@ -93,7 +93,7 @@
   width: 60px;
   height: 60px;
   margin-bottom: 40px;
-  transition: 0.5s;
+  transition: .5s;
   border: 2px solid #fff;
   border-radius: 50%;
 
@@ -117,7 +117,7 @@
     fill: #fff;
     width: 15px;
     height: 15px;
-    transition: 0.5s;
+    transition: .5s;
     animation-name: arrAnim;
     animation-duration: 1.5s;
     animation-play-state: running;
@@ -151,7 +151,7 @@
   font-style: normal;
   line-height: 1;
   margin-bottom: 20px;
-  letter-spacing: -0.03em;
+  letter-spacing: -.03em;
   color: #fff;
 
   @include responsive-font(58, 44);
@@ -202,4 +202,56 @@
   }
 }
 
+.top__whatsapp {
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+
+  @include min(1024) {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+.top__whatsapp-text {
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 16px;
+  transition: opacity .5s;
+  text-decoration: none;
+  pointer-events: auto;
+  color: #101010;
+  border-radius: 6px 6px 0 6px;
+  background-color: #dcf8c8;
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 10px solid #dcf8c8;
+    border-left: 14px solid transparent;
+  }
+  span {
+    display: block;
+  }
+}
+
+.top__whatsapp-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  pointer-events: auto;
+  border-radius: 50%;
+  background-color: #27d045;
+}
 /* end   RIGHT */
