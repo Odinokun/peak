@@ -1,9 +1,7 @@
 <?php
 
-$email_to       = "odinokun@gmail.com";
-// $email_to       = "Info@peakconstruction.us";
-$email_to_2     = "odinokun@gmail.com";
-// $email_to_2     = "Info@peakconstruction.us";
+$email_to       = "Info@peakconstruction.us";
+$email_to_2     = "Info@peakconstruction.us";
 $email_from     = "peakconstruction.us";
 $email_subject  = "Email from peakconstruction.us";
 $date = new DateTime('now', new DateTimeZone('America/Los_Angeles') );
